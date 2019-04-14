@@ -23,8 +23,8 @@ In this project, you'll apply what you've learned on data modeling with Postgres
 
 ## Database Schema
 
-- songplays: records in log data associated with song plays
-- users: users in the app
-- songs: songs in music database
-- artists: artists in music database
-- time: timestamps of records in songplays broken down into specific units
+- songplays: Records in log data associated with song plays
+- users: Users in the app
+- songs: Songs in music database
+- artists: Artists in music database
+- time: Timestamps of records in songplays broken down into specific units
