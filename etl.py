@@ -15,7 +15,9 @@ def process_song_file(cur, filepath):
     """
     # open song file
     df = pd.read_json(filepath, lines=True)
-
+    df['year'] = df['year'].apply(lambda x: x if x != 0 else None)
+    df = df.replace({pd.np.nan: None, "": None})
+    
     # insert song record
     song_data = df[[
         'song_id',
